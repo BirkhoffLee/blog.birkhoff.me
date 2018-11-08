@@ -18,6 +18,7 @@ install:
   - npm install
   - cd themes/suka
   - npm install
+  - cd -
 
 script:
   - hexo clean
