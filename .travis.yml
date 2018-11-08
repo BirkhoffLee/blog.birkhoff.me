@@ -1,0 +1,29 @@
+language: node_js
+sudo: required
+node_js:
+  - 11.1.0
+
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+    - source
+
+before_install:
+  - npm install -g hexo-cli
+
+install:
+  - npm install
+  - npm install hexo-deployer-git
+
+script:
+  - hexo clean
+  - hexo generate
+
+after_script:
+  - git config user.name "Birkhoff Lee"
+  - git config user.email "github@birkhoff.me"
+  - sed -i "s/GH_TOKEN/${GH_TOKEN}/g" ./_config.yml
+  - hexo deploy

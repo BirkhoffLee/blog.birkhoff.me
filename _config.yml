@@ -13,7 +13,7 @@ timezone: Asia/Taipei
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://hexo.birkhoff.me
+url: https://blog.birkhoff.me
 root: /
 permalink: :title/
 permalink_defaults:
@@ -79,9 +79,9 @@ theme: suka
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:BirkhoffLee/hexo.birkhoff.me.git
+  repo: https://GH_TOKEN@github.com/BirkhoffLee/hexo.birkhoff.me.git
   branch: master
-  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+  message: "(CI) Update: {{ now('YYYY-MM-DD HH:mm:ss') }}"
 
 suka_theme:
   search:
@@ -93,3 +93,16 @@ suka_theme:
     line_number: false
     theme: base16-ateliersulphurpool.light
 
+all_minifier: true
+
+image_minifier:
+  enable: false
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
+  silent: false
+
+criticalcss:
+  enable: true
