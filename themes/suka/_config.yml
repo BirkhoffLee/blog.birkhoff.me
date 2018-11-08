@@ -91,7 +91,7 @@ nav:
   home:
     use: true
   archives:
-    use: true
+    use: false
   rss:
     use: false
   share:
@@ -100,8 +100,10 @@ nav:
     use: true
     link: /search
   pages:
-    #About:
-      #link: /about/
+    About:
+      link: /about/
+    Donate:
+      link: /donate/
     #Friends:
       #link: /links/
 
