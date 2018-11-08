@@ -28,6 +28,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
   - content/**
+  - CNAME
   - README.md
 
 # Writing
@@ -81,7 +82,7 @@ theme: suka
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://GH_TOKEN@github.com/BirkhoffLee/hexo.birkhoff.me.git
+  repo: https://GH_TOKEN@github.com/BirkhoffLee/blog.birkhoff.me.git
   branch: master
   message: "(CI) Update: {{ now('YYYY-MM-DD HH:mm:ss') }}"
 

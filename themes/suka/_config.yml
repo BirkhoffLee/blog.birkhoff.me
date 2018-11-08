@@ -42,7 +42,7 @@ head:
   # Open search
   #   Fill in your opensearch xml file here.
   #   Leave it blank if you don't have one
-  open_search: opensearch.xml
+  open_search: /opensearch.xml
   # Keywords
   #   Define meta keywords tag
   #   split with ','
