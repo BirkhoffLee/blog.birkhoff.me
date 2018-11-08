@@ -15,9 +15,9 @@ before_install:
   - npm install -g hexo-cli
 
 install:
-  - npm install themes/suka
   - npm install
-  - npm install hexo-deployer-git
+  - cd themes/suka
+  - npm install
 
 script:
   - hexo clean
