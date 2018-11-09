@@ -30,6 +30,7 @@ skip_render:
   - content/**
   - CNAME
   - README.md
+  - 404.html
 
 # Writing
 new_post_name: :title.md # File name of new posts
