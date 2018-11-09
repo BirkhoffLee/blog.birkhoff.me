@@ -29,5 +29,5 @@ after_script:
   - git config user.email "github@birkhoff.me"
   - sed -i "s/GH_TOKEN/${GH_TOKEN}/g" ./_config.yml
   - hexo deploy
-  - curl -s https://api.telegram.org/bot$TELEGRAM_BOT_APIKEY/sendMessage?chat_id=$TELEGRAM_CHATID&text=Your%20blog%20has%20been%20successfully%20deployed%20by%20CI
+  - curl -i https://api.telegram.org/bot$TELEGRAM_BOT_APIKEY/sendMessage?chat_id=$TELEGRAM_CHATID&text=Your%20blog%20has%20been%20successfully%20deployed%20by%20CI
 
