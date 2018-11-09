@@ -104,8 +104,8 @@ nav:
       link: /about/
     Donate:
       link: /donate/
-    #Friends:
-      #link: /links/
+    Feed:
+      link: /atom.xml
 
 # SNS Share Switch
 # Used to choose which items will be displayed in share menu.
