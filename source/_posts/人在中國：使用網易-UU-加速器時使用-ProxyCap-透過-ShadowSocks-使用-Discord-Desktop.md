@@ -7,6 +7,8 @@ updated: '2018-08-24 16:29:28'
 date: 2018-08-23 18:36:16
 ---
 
+> Edit: 目前最佳解還是 Discord Web 版（本文介紹的方式可能不穩定、且軟體需付費）
+
 # 場景
 * 需要使用*網易 UU 網遊加速器*來降低國際遊戲的延遲
 * Discord Desktop 連線不穩定
@@ -38,20 +40,18 @@ date: 2018-08-23 18:36:16
 3. 模式三 OpenVPN：要安裝虛擬網卡
 4. 模式四 LSP
 
-其中模式 4 似乎會弄壞 SS Socks5 proxy (?)
-然後某些模式 (?) 與 ProxyCap 不相容
-
-且以上兩點是測試出來的結果，測出來**模式二**完全符合需求，UU 不會干擾到 SS/ProxyCap。其餘模式懶的測試，非常耗神
+其中模式 4 會弄壞 ProxyCap、模式三有幾率弄壞 SS。因此採用模式二
 
 # 可能的解決方案
 1. 透過 Router 透明代理 SS（見 Merlin 固件），強制所有 discord 的 domain 走 SS
     * 一般 Router 計算能力通常不佳，除非使用軟路由否則一般都很不穩、速度很慢，而且很不方便使用
 2. 軟體層想辦法讓 Discord 跑去用 SS
-    1. 中國某些加速器會幫你偷偷加速 Discord，例如奇游加速器。不過奇游的效果遠不如 UU，而且奇游加速會對電腦的網絡出奇效，例如你的 SS 本來可以跑滿 100Mbps，開了奇游加速會減速到 300KBps（黑人問號.jpg）
+    1. 中國某些加速器會幫你順便加速 Discord，例如奇游加速器。不過奇游的效果遠不如 UU，而且奇游加速會對電腦的網絡出奇效，例如你的 SS 本來可以跑滿 100Mbps，開了奇游加速會減速到 300KBps（黑人問號.jpg）
     2. 以上提到的 ProxyCap
+    3. Proxifier：UDP 轉發有問題
+    4. SSTAP：已停止維護、且介面設計很奇怪很難使用
+3. 使用 Discord Web 版：有一些小限制
 4. 肉身翻牆（我也想呀 QQ）
-
-經過 1 的測試發現不行，2.1 的測試發現不太 ok，3 的現實情況不允許，只能使用 2.2
 
 # 設定
 
@@ -64,6 +64,9 @@ date: 2018-08-23 18:36:16
 要支援 UDP 轉發。
 
 ## ProxyCap
+
+**ProxyCap** 是付費軟體
+
 ![ProxyCap1](/content/images/2018/08/ProxyCap1.png)
 
 ![ProxyCap2](/content/images/2018/08/ProxyCap2.png)
@@ -78,7 +81,7 @@ Rules 新增完之後，double-click 新的 entry 可以修改更多細項，如
 * 遊戲透過 L2TP VPN 連線至 UU 的某個超神奇遊戲專線伺服器**大幅**降低 latency 與 loss
 * Discord 透過 ProxyCap 再透過 SS 再透過你的某台伺服器**大幅**降低 latency 與 loss 且提升穩定性
     * 蘇州電信 100M/20M FTTB 實測：Discord 香港從直連 ping 200+ 掉到 50 ~ 70 ms
-    * 有時候 Discord 會有被 GFW 封鎖的情況可以順便解決
+    * Discord 被 GFW 封鎖的情況可以順便解決
 
 # 小結
 活在中國真痛苦。然後不要想著順便用 SS 加速遊戲，你想多了。
