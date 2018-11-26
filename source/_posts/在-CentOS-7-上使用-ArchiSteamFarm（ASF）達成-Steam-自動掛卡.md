@@ -10,22 +10,17 @@ tags:
 # 第一步：安裝 .NET 環境、tmux
 以下指令來自 https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x
 ```
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo sh -c 'echo -e "[packages-microsoft-com-prod]\nname=packages-microsoft-com-prod \nbaseurl=https://packages.microsoft.com/yumrepos/microsoft-rhel7.3-prod\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/dotnetdev.repo'
-sudo yum update
-sudo yum install libunwind libicu
-sudo yum install dotnet-sdk-2.0.0
-export PATH=$PATH:$HOME/dotnet
-dotnet --version
+sudo yum remove dotnet-host.x86_64
+rm -rf ~/.dotnet
+curl -O https://dot.net/v1/dotnet-install.sh
+chmod +x ./dotnet-install.sh
+./dotnet-install.sh -c Current
+rm dotnet-install.sh
+export PATH="$PATH:$HOME/.dotnet"
+dotnet --info
 ```
-如果成功了會輸出類似這種東西
-```
-[birkhoff@docker-asia-1 ~]$ dotnet --version
-Did you mean to run dotnet SDK commands? Please install dotnet SDK from:
-  http://go.microsoft.com/fwlink/?LinkID=798306&clcid=0x409
-```
-雖然看起來很奇怪但是它就是會跑出這個。
-這邊提醒一下，建議用 tmux 或 screen 之類的套件讓 ASF 跑在後台，這樣就可以真正無人值守掛卡啦！
+
+記得進你的 shell startup script 把 `$HOME/.dotnet` 加到 `PATH` 裡。這邊提醒一下，建議用 tmux 或 screen 之類的套件讓 ASF 跑在後台，這樣就可以真正無人值守掛卡啦！
 ```
 sudo yum install -y tmux
 ```
