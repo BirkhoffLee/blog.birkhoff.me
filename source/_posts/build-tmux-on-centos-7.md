@@ -15,10 +15,12 @@ So I have been recently annoyed with some super strange display issues that tmux
 We’ll be grabbing the official tmux repo from https://github.com/tmux/tmux, build version 2.8 and install it. Note that you’ll need root privileges to install tmux.
 
 ```bash
+$ sudo yum remove tmux # remove old version of tmux
 $ git clone https://github.com/tmux/tmux.git
 $ cd tmux
 $ git checkout 2.8
 $ sh autogen.sh
+$ sudo yum install libevent-devel ncurses-devel automake
 $ ./configure && make
 $ sudo make install
 $ tmux # profit
