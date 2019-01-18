@@ -1,5 +1,5 @@
 ---
-title: Change GRUB timeout in OpenWrt to speed qup boot process
+title: Change GRUB timeout in OpenWrt to speed up boot process
 categories:
   - null
 tags:
