@@ -1,5 +1,5 @@
 ---
-title: Running Clash on OpenWrt
+title: Running Clash on OpenWrt as a transparent proxy
 categories:
   - null
 tags:
