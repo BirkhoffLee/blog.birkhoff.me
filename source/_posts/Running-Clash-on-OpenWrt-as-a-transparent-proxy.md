@@ -39,7 +39,7 @@ $ mv clash-linux clash
 ```
 
 # Write Clash Configuration
-It’s the most complicated step in this process. It depends on whether your ShadowSocks service provider provides a managed clash configuration. If you don’t, check these out:
+It’s the most complicated step in this process. It depends on whether your ShadowSocks service provider provides a managed clash configuration. If they don’t, check these out:
 * [https://raw.githubusercontent.com/lhie1/Rules/master/Clash/General\_dns.yml][4]
 * [https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Rule.yml][5]
 
@@ -85,7 +85,7 @@ iptables -t nat -A PREROUTING -p tcp -j REDIRECT --to-ports 8887
 ```
 
 # Run Clash
-Congratulation to your last step. Run the following to launch Clash.
+Congratulations to your last step. Run the following to launch Clash.
 
 ```bash
 $ cd /etc/clash
