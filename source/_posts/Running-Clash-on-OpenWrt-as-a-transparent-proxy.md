@@ -77,11 +77,11 @@ Open up `[https://luci.openwrt/cgi-bin/luci/admin/network/dhcp]`, go to `Advance
 Clash is now taking over all DNS packets, so you get clean DNS results instead of polluted ones.
 
 # Route the traffic to Clash
-It’s fairly simple, just run the following two commands to configure *iptables*. Aware of that you need to change `YOUR_SSH_PORT`. `8887` is the redir port we previously configured.
+Open up [https://luci.openwrt/cgi-bin/luci/admin/network/firewall/custom][6], add the following two lines to the end of the rules. Be aware that you need to change `YOUR_SSH_PORT`. `8887` is the redir port we previously configured in Clash’s configuration.
 
 ```bash
-$ iptables -t nat -A PREROUTING -p tcp --dport YOUR_SSH_PORT -j ACCEPT
-$ iptables -t nat -A PREROUTING -p tcp -j REDIRECT --to-ports 8887
+iptables -t nat -A PREROUTING -p tcp --dport YOUR_SSH_PORT -j ACCEPT
+iptables -t nat -A PREROUTING -p tcp -j REDIRECT --to-ports 8887
 ```
 
 # Run Clash
@@ -101,7 +101,7 @@ $ ./clash -d . &
 # Control Clash
 Remember the `external-controller`? We’re gonna make use of it… right now. 
 
-There’s a fantastic web interface that does exactly the work: [http://clash.razord.top/][6]. Use your OpenWrt IP address, and the `external-controller` port to authenticate. Be aware that it’s in Chinese.
+There’s a fantastic web interface that does exactly the work: [http://clash.razord.top/][7]. Use your OpenWrt IP address, and the `external-controller` port to authenticate. Be aware that it’s in Chinese.
 
 # Clash as a Service
 We can make clash into a system service. Create `/etc/init.d/clash` with the following shell script:
@@ -232,4 +232,5 @@ $ service clash restart
 [3]:	https://www.nssurge.com
 [4]:	https://raw.githubusercontent.com/lhie1/Rules/master/Clash/General_dns.yml
 [5]:	https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Rule.yml
-[6]:	http://clash.razord.top/
+[6]:	https://luci.openwrt/cgi-bin/luci/admin/network/firewall/custom
+[7]:	http://clash.razord.top/
