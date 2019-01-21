@@ -7,7 +7,11 @@
 # Techniques
 
 * GitHub Pages
-
+* HTTP/2
+* Brotli compression
+* TLS 1.3 + 0RTT
 * Cloudflare (Pro)
-
+  * Polish
+  * Railgun™
+  * Mirage 
 * Hexo
