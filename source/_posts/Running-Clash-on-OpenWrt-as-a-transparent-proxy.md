@@ -55,6 +55,7 @@ log-level: info
 external-controller: 0.0.0.0:6170
 dns:
   enable: true
+  ipv6: false
   listen: 0.0.0.0:53
   enhanced-mode: redir-host
   nameserver:
