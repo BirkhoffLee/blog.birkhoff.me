@@ -17,9 +17,9 @@ To install `pam_reattach`, you will need to run the following commands to downlo
 $ cd
 $ git clone https://github.com/fabianishere/pam_reattach
 $ cd pam_reattach
-$ cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr $(pwd)
+$ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr/local $(pwd)
 $ make
-$ sudo make install
+$ make install
 ```
 
 Ultimately, make sure `/etc/pam.d/sudo` looks like this in the beginning of file:
