@@ -9,6 +9,10 @@ date: 2018-08-23 18:36:16
 
 > Edit: 目前最佳解還是 Discord Web 版（本文介紹的方式可能不穩定、且軟體需付費）
 
+> Edit 2: Proxifier 支援 UDP 而且用起來沒什麼問題，相較 ProxyCap 還是 Proxifier 比較好用（ProxyCap 太常跟 UU 衝突）。此文將會擇日重新編撰。
+
+我目前在使用 [rixCloud](https://portal.rixcloud.me/aff.php?aff=2004) 提供的 Shadowsocks 服務，所有 server 經國內伺服器中轉以保證穩定性。推薦公司行號或需求極大的人使用。
+
 # 場景
 * 需要使用*網易 UU 網遊加速器*來降低國際遊戲的延遲
 * Discord Desktop 連線不穩定
