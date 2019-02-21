@@ -26,7 +26,7 @@ head:
     # 180x180 png
     apple_touch_icon:
     # 192x192 png
-    large:
+    large: 
     # svg icon
     safari_pinned_tab:
   # Color
