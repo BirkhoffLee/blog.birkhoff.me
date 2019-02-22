@@ -29,4 +29,5 @@ after_script:
   - git config user.email "github@birkhoff.me"
   - sed -i "s/GH_TOKEN/${GH_TOKEN}/g" ./_config.yml
   - hexo deploy
-  - curl -X POST -H 'Content-Type: application/json' -d "{'chat_id': '$TELEGRAM_CHATID', 'text': '$TRAVIS_REPO_SLUG <$TRAVIS_COMMIT>\n$TRAVIS_COMMIT_MESSAGE\n\nThe commit has been successfully been deployed to https://blog.birkhoff.me.\n\n$TRAVIS_BUILD_WEB_URL'}" https://api.telegram.org/bot$TELEGRAM_BOT_APIKEY/sendMessage
+  - |-
+    curl -X POST -H 'Content-Type: application/json' -d "{'chat_id': '$TELEGRAM_CHATID', 'text': '$TRAVIS_REPO_SLUG <$TRAVIS_COMMIT>\n$TRAVIS_COMMIT_MESSAGE\n\nThe commit has been successfully been deployed to https://blog.birkhoff.me.\n\n$TRAVIS_BUILD_WEB_URL'}" https://api.telegram.org/bot$TELEGRAM_BOT_APIKEY/sendMessage
