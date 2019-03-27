@@ -108,7 +108,7 @@ There’s a fantastic web interface that does exactly the work: [http://clash.ra
 We can make clash into a system service. Create `/etc/init.d/clash` with the following shell script:
 
 ```bash
-#!/bin/bash
+#!/bin/sh
 
 ### BEGIN INIT INFO
 # Provides:                 Clash
