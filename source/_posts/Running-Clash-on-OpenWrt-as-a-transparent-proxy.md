@@ -94,9 +94,9 @@ dns:
   fallback:
 ```
 
-Let’s tear it down. `9090` is the redir port, `external-controller` is the API that we’re gonna use later to control Clash.
+Let’s tear it down. `9090` is the redir port, `allow-lan` allows other devices in LAN to access the proxy and `external-controller` is the API that we’re gonna use later to control Clash.
 
-We set up `dnsmasq` on your OpenWRT to forward DNS requests to Clash, on `127.0.0.1:5353`, and Clash will resolve domain names through `127.0.0.1:5555`, which is Overture that we will set up later.
+We will set up `dnsmasq` on OpenWRT to forward DNS requests to Clash, on `127.0.0.1:5353`, and Clash will resolve domain names through `127.0.0.1:5555`, which is Overture that we will set up later.
 
 # Configure dnsmasq
 Go to `https://ROUTER_IP/cgi-bin/luci/admin/network/dhcp`.
