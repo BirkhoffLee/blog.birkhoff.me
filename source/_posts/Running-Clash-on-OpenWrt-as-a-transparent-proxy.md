@@ -43,9 +43,11 @@ USE_PROCD=1
 start_service() {
         procd_open_instance
         procd_set_param command /etc/clash/clash -d /etc/clash
-        procd_set_param respawn
+        procd_set_param respawn 300 0 5 # threshold, timeout, retry
+        procd_set_param file /etc/clash/config.yml
         procd_set_param stdout 1
         procd_set_param stderr 1
+        procd_set_param pidfile /var/run/clash.pid
         procd_close_instance
 }
 ```
@@ -56,7 +58,9 @@ Then run the following to make it executable:
 $ chmod +x /etc/init.d/clash
 ```
 
-I’m looking into a practical solution on making Clash auto-restart when it crashes. (I haven’t encountered that, but why not?)
+This init.d script also immediately restarts clash when it exits for whatever reason. If it crashes 5 times in 5 minutes, it won’t be restarted anymore.
+
+The logs are in `/var/log/messages`.
 
 # Write Clash Configuration
 I'm not covering how to write Clash configuration in this blog post, but these options must be set as follows:
