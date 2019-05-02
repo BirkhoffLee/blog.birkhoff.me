@@ -21,10 +21,10 @@ Today I wanted to play BFV and upon launching it just crashes without any error 
 
 I fixed it by doing the followings:
 
-1. Completely close MSI Afterburner and RTSS or other overlays you have. They are NOT compatible with DX12 games.
-2. Go to `bfv.exe` and go to the Properties \> Compatibility, check `Disable full screen optimizations` and click on `Change high DPI settings`. Check the box that says "Override high DPI scaling behavior. Scaling performed by”. Select "Application" in the drop down box. Click ok.
-3. On my machine, after some point it runs out of memory when in-game, it also causes stuttering. Use [https://www.wagnardsoft.com/content/intelligent-standby-list-cleaner-v1000-released][1] to solve it.
-4. Run DDU to do a clean-reinstall of the graphics drivers.
+* When playing BFV, make sure to completely close MSI Afterburner and RTSS or other overlays you have. They are NOT compatible with DX12 games.
+* Go to `bfv.exe` and go to the Properties \> Compatibility, check `Disable full screen optimizations` and click on `Change high DPI settings`. Check the box that says "Override high DPI scaling behavior. Scaling performed by”. Select "Application" in the drop down box. Click ok.
+* On my machine, after some point it runs out of memory when in-game, it also causes stuttering. Use [https://www.wagnardsoft.com/content/intelligent-standby-list-cleaner-v1000-released][1] to solve it.
+* Run DDU to do a clean-reinstall of the graphics drivers. Remember to screenshot the settings in the NVIDIA control panel, as running DDU will erase them as well.
 
 That’s it. If any of the above worked for you, make sure to let me know in the comments section down below!
 
