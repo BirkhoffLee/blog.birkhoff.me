@@ -152,8 +152,6 @@ server:
 	num-queries-per-thread: 30
 	msg-buffer-size: 8192
 	infra-cache-numhosts: 200
-	msg-cache-size: 100k
-	rrset-cache-size: 100k
 	key-cache-size: 100k
 	neg-cache-size: 10k
 	target-fetch-policy: "2 1 0 0 0 0"
