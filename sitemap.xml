@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://blog.birkhoff.me/search.html</loc>
+    
+    <lastmod>2020-02-20T13:04:37.464Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/donate/index.html</loc>
+    
+    <lastmod>2020-02-20T13:04:37.460Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/about/index.html</loc>
+    
+    <lastmod>2020-02-20T13:04:37.068Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/Change-GRUB-timeout-in-OpenWrt-to-speed-up-boot-process/</loc>
+    
+    <lastmod>2020-02-20T13:04:37.064Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/Changing-default-gateway-in-Unifi-Security-Gateway-USG/</loc>
+    
+    <lastmod>2020-02-20T13:04:37.064Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/Setting-up-a-WireGuard-server-on-OpenWRT/</loc>
+    
+    <lastmod>2020-02-20T13:04:37.064Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/Solution-to-Battlefield-V-keeping-crashing-on-Win10/</loc>
+    
+    <lastmod>2020-02-20T13:04:37.064Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/build-tmux-on-centos-7/</loc>
+    
+    <lastmod>2020-02-20T13:04:37.064Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/solve-firebase-login-error-behind-proxy-mac/</loc>
+    
+    <lastmod>2020-02-20T13:04:37.064Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/Running-Clash-on-OpenWrt-as-a-transparent-proxy/</loc>
+    
+    <lastmod>2020-02-20T13:04:37.064Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/redirect-domains-to-specific-urls-with-traefik/</loc>
+    
+    <lastmod>2018-10-20T18:03:05.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/make-sudo-authenticate-with-touch-id-in-a-tmux/</loc>
+    
+    <lastmod>2018-10-10T13:55:07.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/forza-horizon-4-pc-wont-launch-or-says-sign-in-needed/</loc>
+    
+    <lastmod>2018-10-01T18:27:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/macos-mojave-continuity-camera/</loc>
+    
+    <lastmod>2018-09-25T15:59:31.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/improve-your-cli-experience/</loc>
+    
+    <lastmod>2018-09-11T14:42:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/analyze-disk-space-usage-on-centos-redhat-with-ncdu/</loc>
+    
+    <lastmod>2018-09-05T16:14:03.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/chrome-extensions-that-i-as-a-developer-gamer-use/</loc>
+    
+    <lastmod>2018-09-01T18:00:17.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/devops-truncate-docker-container-logs-periodically-to-free-up-server-disk-space/</loc>
+    
+    <lastmod>2018-08-30T09:34:39.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/use-discord-in-china/</loc>
+    
+    <lastmod>2018-08-24T08:29:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/migrate-from-ghost-pro-to-self-hosted/</loc>
+    
+    <lastmod>2018-08-22T07:07:24.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/sshd-asking-password-added-key/</loc>
+    
+    <lastmod>2018-08-22T07:04:45.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/send-email-thru-mailgun-on-centos-7/</loc>
+    
+    <lastmod>2018-08-08T07:06:41.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/make-cron-send-email-only-on-error/</loc>
+    
+    <lastmod>2018-07-30T01:05:10.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/changing-default-shell-for-a-non-root-user-on-your-linux-server-without-being-asked-for-a-password/</loc>
+    
+    <lastmod>2018-07-25T03:40:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/serve-traefiks-internal-dashboard-behind-traefik/</loc>
+    
+    <lastmod>2018-07-22T22:47:46.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/install-archisteamfarm-on-centos-7/</loc>
+    
+    <lastmod>2018-02-05T21:22:13.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/use-docker-to-deploy-vmess-and-ss-using-docker/</loc>
+    
+    <lastmod>2017-11-12T08:16:14.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/docker-aufs-solution/</loc>
+    
+    <lastmod>2017-04-21T15:33:18.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/macos-sierra-10-12-2-build-caffe/</loc>
+    
+    <lastmod>2017-01-22T16:12:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/google-xss-game-solutions/</loc>
+    
+    <lastmod>2017-01-21T15:21:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/lets-encrypt-introduction/</loc>
+    
+    <lastmod>2017-01-07T16:18:34.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/the-hebbs-rule/</loc>
+    
+    <lastmod>2016-09-21T14:04:21.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/bash_on_windows_installation/</loc>
+    
+    <lastmod>2016-08-10T23:43:15.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/capture-genymotion-https-package-osx/</loc>
+    
+    <lastmod>2016-07-22T14:35:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/move-to-telegram-from-line/</loc>
+    
+    <lastmod>2016-06-24T17:01:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/xapo-bitcoin-visa-debit-card/</loc>
+    
+    <lastmod>2016-06-21T14:45:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/telegram-to-chinese/</loc>
+    
+    <lastmod>2016-06-21T14:14:23.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/apple-pay/</loc>
+    
+    <lastmod>2016-06-09T13:33:33.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/public-key-cryptography/</loc>
+    
+    <lastmod>2016-06-09T13:33:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/plastc-card/</loc>
+    
+    <lastmod>2016-06-09T13:33:20.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/introducing-artificial-neural-network-1/</loc>
+    
+    <lastmod>2016-06-09T04:22:01.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/windows-10-and-ubuntu-14_04_3-lts-dual-boot/</loc>
+    
+    <lastmod>2016-03-01T05:01:09.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.birkhoff.me/fix-sunpinyin/</loc>
+    
+    <lastmod>2016-03-01T04:56:35.000Z</lastmod>
+    
+  </url>
+  
+</urlset>

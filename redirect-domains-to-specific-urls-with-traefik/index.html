@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><script>window.lsVersion="1.3.0",window.oldVersion=["0.2.0","0.0.1","0.1.0","1.0.0","1.0.1","1.1.0","1.1.1","1.2.0"]</script><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="//www.googletagmanager.com"><link rel="dns-prefetch" href="//www.google-analytics.com"><meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1"><meta name="renderer" content="webkit"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><title>Redirect domains to specific URLs with Traefik | Birkhoff&#39;s Blog</title><link rel="shortcut icon" type="image/ico" href="/img/suka-favicon.ico"><meta name="format-detection" content="telephone=no"><meta name="description" content="I recently again needed to redirect a specific domain to a URL. For example redirecting google.birkhoff.me to https://www.google.com.I used t..."><meta name="keywords" content=""><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>body{background-color:#f8f9fa}a,a:visited{color:#0070ff}a:active,a:focus,a:hover{color:#0070ff;opacity:.75}#post-content a,#post-content a:focus,#post-content a:hover,#post-content a:visited{color:#005eb9;opacity:1}.post-entry .card-body a{color:#0070ff}.avatar{background:#444}.navbar-link,.navbar-link:visited,.timeline .timeline-item .timeline-icon.icon-lg{color:#0070ff}.navbar-link:hover{color:#0070ff;opacity:.8}#disqus-loadmore-button,#disqus-switch-to-direct,#disqus_click_btn,#search-input .btn{background:#727e96;border-color:#727e96;color:#fff}#post-toc a.post-toc-link,#post-toc a.post-toc-link:visited,.share-menu.menu .menu-item>a{color:#727e96}.share-menu.menu .menu-item>a:focus,.share-menu.menu .menu-item>a:hover,.share-menu.menu .menu-item>a:visited{color:#50596c;background:#f8f9fa;opacity:.85}</style><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.0.6/dist/disqusjs.css"><link rel="stylesheet" href="/css/highlight/github.min.css"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Birkhoff&#39;s Blog"><meta name="msapplication-starturl" content="https://blog.birkhoff.me"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Birkhoff&#39;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Birkhoff&#39;s Blog"><meta property="og:title" content="Redirect domains to specific URLs with Traefik | Birkhoff&#39;s Blog"><meta property="og:site_name" content="Birkhoff&#39;s Blog"><meta property="og:locale" content="en"><meta property="og:url" content="https://blog.birkhoff.me/redirect-domains-to-specific-urls-with-traefik/"><meta property="og:image" content="https://blog.birkhoff.me/img/suka-favicon.ico"><meta property="og:description" content="I recently again needed to redirect a specific domain to a URL. For example redirecting google.birkhoff.me to https://www.google.com.I used t..."><meta name="twitter:card" content="summary"><meta property="og:type" content="article"><meta property="article:published_time" content="2018-10-20T17:39:28.000Z"><meta property="article:modified_time" content="2018-10-20T17:39:28.000Z"><meta property="article:author" content="Birkhoff Lee"><meta property="og:article:tag" content=""><script async src="https://www.googletagmanager.com/gtag/js?id=UA-68379784-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","")</script><link rel="canonical" href="https://blog.birkhoff.me/redirect-domains-to-specific-urls-with-traefik/"><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "url": "https://blog.birkhoff.me/redirect-domains-to-specific-urls-with-traefik/",
+    "@type": "BlogPosting",
+    "logo": "https://blog.birkhoff.me/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://blog.birkhoff.me/redirect-domains-to-specific-urls-with-traefik/"
+    },
+    "headline": "Redirect domains to specific URLs with Traefik | Birkhoff&#39;s Blog",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://blog.birkhoff.me/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2018-10-20T17:39:28.000Z",
+    "dateModified": "2018-10-20T18:03:05.000Z",
+    "author": {
+        "@type": "Person",
+        "name": "Birkhoff Lee",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://blog.birkhoff.me/img/birkhoff.jpg"
+        },
+        "description": "Thoughts and technonogies."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Birkhoff&#39;s Blog",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://blog.birkhoff.me/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://blog.birkhoff.me/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "I recently again needed to redirect a specific domain to a URL. For example redirecting google.birkhoff.me to https://www.google.com.I used t..."
+}</script><script src="//instant.page/1.1.0" type="module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script></head><body><header><h1 class="header-title text-center"><a href="/">Birkhoff&#39;s Blog</a></h1><p class="text-center header-slogan">Thoughts and technonogies.</p><nav class="navbar-section text-center"><a href="/" class="navbar-link">Home</a> <a href="/search" class="navbar-link">Search</a> <a href="/about/" class="navbar-link">About</a> <a href="/donate/" class="navbar-link">Donate</a> <a href="/atom.xml" class="navbar-link">Feed</a></nav></header><div class="post-container"><div id="post-card" class="card"><div class="card-item-container"><div class="card-inner-cell"><div class="card-header"><h1 class="card-title h3 mb-2">Redirect domains to specific URLs with Traefik</h1><div class="post-header-info"><p class="post-header-info-left text-gray"><img class="author-thumb lazyload" data-src="/img/birkhoff.jpg" alt="Birkhoff Lee's Avatar"> <span>October 21st 2018</span></p><div class="post-header-info-right"><div class="dropdown dropdown-right"><a class="dropdown-toggle" tabindex="0">Share</a><ul class="menu share-menu"><li class="menu-item"><a href="https://twitter.com/intent/tweet?text=Redirect domains to specific URLs with Traefik&url=https://blog.birkhoff.me/redirect-domains-to-specific-urls-with-traefik/&via=Birkhoff Lee" target="_blank" rel="noopener noreferrer nofollow">Share to Twitter</a></li><li class="menu-item"><a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.birkhoff.me/redirect-domains-to-specific-urls-with-traefik/" target="_blank" rel="noopener noreferrer nofollow">Share to Facebook</a></li><li class="menu-item"><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.birkhoff.me/redirect-domains-to-specific-urls-with-traefik/&title=Birkhoff's Blog" target="_blank" rel="noopener noreferrer nofollow">Share to LinkedIn</a></li><li class="menu-item"><a href="https://t.me/share/url?url=https://blog.birkhoff.me/redirect-domains-to-specific-urls-with-traefik/&text=Birkhoff's Blog" target="_blank" rel="noopener noreferrer nofollow">Share to Telegram</a></li></ul></div></div></div></div><div class="card-body"><article id="post-content"><p>I recently again needed to redirect a specific domain to a URL. For example redirecting <code>google.birkhoff.me</code> to <code>https://www.google.com</code>.</p><p>I used to run some Docker containers which runs some web servers that redirect HTTP requests to make this work. I knew from the beginning that it wasn’t the most elegant or efficient way to do so, but I didn’t have any other idea for that. A friend once told me Firebase will do the job, but it’s limited to redirecting to a domain, not a URL, so no.</p><p>So today I was about to do the same thing (you can see me forked <a href="https://github.com/MorbZ/docker-web-redirect" target="_blank" rel="noopener">MorbZ/docker-web-redirect</a> to <a href="https://github.com/BirkhoffLee/docker-web-redirect" target="_blank" rel="noopener">BirkhoffLee/docker-web-redirect today</a>), changed a bit in the repo and when I launched it up. All of a sudden when I was dealing with Traefik stuff I thought Traefik could’ve been doing the job for me, if I configured it correctly.</p><p>After searching around for a bit, some related GitHub issues came up, without the exact solutions. My workaround has some benefits:</p><ul><li>does not need any other program to handle requests, therefore it’s efficient</li><li>built-in regex redirection support</li><li>centralized, easier to manage</li></ul><p>This is the configuration block that you would want to put in your <code>traefik.toml</code>:</p><pre><code>[file]
+
+  [backends]
+
+    [backends.fake]
+      [backends.fake.servers.s1]
+        url=&quot;http://1.2.3.4&quot;
+
+  [frontends]
+
+    [frontends.r1]
+      backend = &quot;fake&quot;
+      [frontends.r1.routes.host]
+        rule = &quot;Host:test.birkhoff.me&quot;
+      [frontends.r1.redirect]
+        regex = &quot;^https?://test.birkhoff.me/(.*)&quot;
+        replacement = &quot;https://google.com&quot;
+        permanent = true
+
+    [frontends.r2]
+      backend = &quot;fake&quot;
+      [frontends.r2.routes.host]
+        rule = &quot;Host:another-test.birkhoff.me&quot;
+      [frontends.r2.redirect]
+        regex = &quot;^https?://another-test.birkhoff.me/(.*)&quot;
+        replacement = &quot;https://twitter.com/$1&quot;
+        permanent = false
+
+    # so forth..
+</code></pre><p>I hope I can get a centralized, web-based management panel that runs on a Docker container so I can manage these stuff more efficiently. If you have any other solutions to this topic, please comment down below to let me know!</p></article><p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2018-10-20T17:39:28.000Z" itemprop="datePublished">October 21st 2018</time>.</p><p class="post-footer-info mb-0 pt-2"></p></div><div class="post-nav px-2 bg-gray"><ul class="pagination"><li class="page-item page-prev"><a href="/solve-firebase-login-error-behind-proxy-mac/"><div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div><div class="page-item-subtitle">Solve &#34;The Firebase CLI login request was rejected or an error occurred&#34; when behind a proxy on macOS</div></a></li><li class="page-item page-next"><a href="/forza-horizon-4-pc-wont-launch-or-says-sign-in-needed/"><div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div><div class="page-item-subtitle">Forza Horizon 4 PC won&#39;t launch, or says sign-in needed</div></a></li></ul></div><div class="card-footer post-comment"><div id="disqus_thread"></div><script src="https://cdn.jsdelivr.net/npm/disqusjs@1.0.6/dist/disqus.js"></script><script>var dsqjs=new DisqusJS({shortname:"birkhoff",identifier:"https://blog.birkhoff.me/redirect-domains-to-specific-urls-with-traefik/",url:"https://blog.birkhoff.me/redirect-domains-to-specific-urls-with-traefik/",api:"",apikey:"k71pSDWqRW7T6zNLNcz2h9gEc3AuWTO5bwIjy02UJWfCO8GlPUiGQt9vb6SiDVtP",admin:"birkhofflee"})</script></div></div></div></div></div><footer class="text-center"><p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span data-year=""></span> <a class="footer-copyright-a" href="https://blog.birkhoff.me">Birkhoff&#39;s Blog</a></p><p class="footer-text mb-0"></p><p class="footer-develop mb-0">Powered by&nbsp;<a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="noopener">Suka</a></p></footer><script>window.lazyLoadOptions={elements_selector:".lazyload",threshold:50};var copyrightNow=(new Date).getFullYear(),copyrightContent=document.querySelector("span[data-year]");copyrightSince=2015,copyrightSince===copyrightNow?copyrightContent.textContent=copyrightNow:copyrightContent.textContent=copyrightSince+" - "+copyrightNow,console.log("\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.0 %c https://github.com/SukkaW/hexo-theme-suka \n","color: #fff; background: #444; padding:5px 0;","background: #bbb; padding:5px 0;")</script><script src="/lib/vanilla-lazyload/lazyload.min.js" async></script></body></html>
